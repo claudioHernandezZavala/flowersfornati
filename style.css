@@ -1064,11 +1064,11 @@ mask-image: linear-gradient(to top, transparent 40%, #079097 80%) !important;
 /* Base styles for desktop and larger screens */
 .moon {
   position: absolute;
-  top: 10%; /* Position the moon vertically */
-  right: 15%; /* Position the moon horizontally */
+  top: 7%; /* Position the moon vertically */
+  right: 40%; /* Position the moon horizontally */
   width: 120px; /* Width of the moon */
   height: 120px; /* Height of the moon */
-  background-color: #f5f3ce; /* Light yellow color for the moon */
+  background-color: #76744c; /* Light yellow color for the moon */
   border-radius: 50%; /* Make it a circle */
   box-shadow: 
       0 0 30px 10px rgba(245, 243, 206, 0.5), /* Outer glow */
@@ -1078,7 +1078,7 @@ mask-image: linear-gradient(to top, transparent 40%, #079097 80%) !important;
       10px 10px 5px rgba(0, 0, 0, 0.2) inset, /* More texture */
       -5px -5px 15px rgba(255, 255, 255, 0.2) inset; /* Subtle highlight */
   background: radial-gradient(circle at 30% 30%, 
-      rgba(245, 243, 206, 0.9), rgba(230, 228, 190, 0.9) 50%, 
+      rgba(153, 151, 118, 0.9), rgba(230, 228, 190, 0.9) 50%, 
       rgba(217, 214, 170, 0.7) 70%, 
       rgba(200, 197, 150, 0.5) 85%, 
       rgba(160, 158, 120, 0.2) 100%);
