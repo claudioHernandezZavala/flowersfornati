@@ -1056,8 +1056,62 @@ mask-image: linear-gradient(to top, transparent 40%, #079097 80%) !important;
   top: 10%; /* Adjust as needed */
   left: 50%; /* Center horizontally */
   transform: translateX(-50%); /* Center the text */
-  color: #06a2bd; /* White color for contrast against the dark background */
+  color: #05c3e5; /* White color for contrast against the dark background */
   font-size: 3rem; /* Adjust font size as needed */
   text-align: center; /* Center the text */
   z-index: 100; /* Ensure it's on top of other elements */
 }
+/* Base styles for desktop and larger screens */
+.moon {
+  position: absolute;
+  top: 10%; /* Position the moon vertically */
+  right: 15%; /* Position the moon horizontally */
+  width: 120px; /* Width of the moon */
+  height: 120px; /* Height of the moon */
+  background-color: #f5f3ce; /* Light yellow color for the moon */
+  border-radius: 50%; /* Make it a circle */
+  box-shadow: 
+      0 0 30px 10px rgba(245, 243, 206, 0.5), /* Outer glow */
+      -10px -10px 50px rgba(245, 243, 206, 0.2) inset, /* Inner shading */
+      20px 20px 30px rgba(0, 0, 0, 0.3) inset, /* Dark craters */
+      -20px -20px 50px rgba(255, 255, 255, 0.1) inset, /* Highlight */
+      10px 10px 5px rgba(0, 0, 0, 0.2) inset, /* More texture */
+      -5px -5px 15px rgba(255, 255, 255, 0.2) inset; /* Subtle highlight */
+  background: radial-gradient(circle at 30% 30%, 
+      rgba(245, 243, 206, 0.9), rgba(230, 228, 190, 0.9) 50%, 
+      rgba(217, 214, 170, 0.7) 70%, 
+      rgba(200, 197, 150, 0.5) 85%, 
+      rgba(160, 158, 120, 0.2) 100%);
+  z-index: 10; /* Make sure it's above the stars but below any other content */
+}
+
+.background-text {
+  position: absolute;
+  top: 20%; /* Position the text below the moon */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center the text */
+  color: #ffffff; /* White color for contrast against the dark background */
+  font-size: 3rem; /* Adjust font size as needed */
+  text-align: center; /* Center the text */
+  z-index: 10; /* Ensure it's on top of other elements */
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+  .moon {
+      top: 5%; /* Move the moon closer to the top */
+      left: 50%; /* Center the moon horizontally */
+      transform: translateX(-50%); /* Adjust the horizontal centering */
+      width: 80px; /* Resize the moon for smaller screens */
+      height: 80px; /* Resize the moon for smaller screens */
+  }
+
+  .background-text {
+      top: 15%; /* Adjust the position for mobile */
+      font-size: 2rem; /* Resize the text for smaller screens */
+      left: 50%; /* Ensure the text is centered */
+      transform: translateX(-50%); /* Adjust the horizontal centering */
+  }
+}
+
+
